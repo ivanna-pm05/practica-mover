@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/perfil-card.js" defer></script>
+    <script src="js/back-card.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/icons8-capitán-américa-50.png">
+    <title>Card Comic</title>
+</head>
+<body>
+    <div>
+        <search-card></search-card>
+    </div>
+    <div class="contenedor">
+        <perfil-card class="back">
+            <span slot="imagen">https://media.revistagq.com/photos/621f6d1723b7738d21d91e1d/1:1/w_1439,h_1439,c_limit/batman-uhdpaper.com-4K-17.jpg</span>
+            <h2 slot="nombre">Scarlet Witch</h2>
+            <p slot="idname"><b>Nombre clave:</b> Wanda </p>
+            <button>Mas info</button>
+        </perfil-card>
+        <back-card class="front">
+            <h2 slot="nombre">Scarlet Witch</h2>
+            <p slot="idname">Wanda</p>
+            <p slot="descripcion">Conocida como la Bruja Escarlata, es una hechicera romaní con la capacidad de usar magia del caos para alterar probabilidades a nivel cuántico y deformar la realidad como un ser nexo.</p>
+            <button id="btn">Volver</button>
+        </back-card>
+    </div>
+</body>
+</html>

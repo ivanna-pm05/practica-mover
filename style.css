@@ -1,0 +1,38 @@
+body{
+    background-image: url(img/fonto2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    margin: 0;
+
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+    backface-visibility: hidden;
+}
+p{
+    color: #ffffff;
+}
+perfil-card:hover{
+    transform: translateY(-5px);
+    background-color: #8b353591;
+}
+.front{
+    background-color: blue;
+    transform: perspective(500px) rotateY(0deg);
+}
+.back{
+    background-color: rgb(12, 192, 236);
+    transform: perspective(500px) rotateY(180deg);
+}
+.back:hover{
+    transform: perspective(500px) rotateY(180deg);
+}
+.front:hover{
+    transform: perspective(500px) rotateY(360deg);
+}
